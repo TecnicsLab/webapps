@@ -1,1 +1,1 @@
-#Place /Classes Folder and lib /Folder!
+#Place /classes Folder and /lib Folder!
