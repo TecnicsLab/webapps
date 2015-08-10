@@ -1,0 +1,100 @@
+<web-app>
+	<servlet>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>SampleText</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>hello1</servlet-name>
+		<servlet-class>SampleText1</servlet-class>
+	</servlet>
+<servlet>
+		<servlet-name>chatLogin</servlet-name>
+		<servlet-class>logIn</servlet-class>
+	</servlet>
+<servlet>
+		<servlet-name>chatLogout</servlet-name>
+		<servlet-class>logOut</servlet-class>
+	</servlet>
+<servlet>
+		<servlet-name>History</servlet-name>
+		<servlet-class>History</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>chat</servlet-name>
+		<servlet-class>RegistrationServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DisplayMsg</servlet-name>
+		<servlet-class>DisplayMessageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>updatetaskServlet</servlet-name>
+		<servlet-class>SampleTextU</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>InsertData</servlet-name>
+		<servlet-class>TodoServletInsert</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DisplayData</servlet-name>
+		<servlet-class>TodoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateData</servlet-name>
+		<servlet-class>TodoServletUpdate</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Dictionary</servlet-name>
+		<servlet-class>Dict</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>/addtask1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>hello1</servlet-name>
+		<url-pattern>/addtask2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>updatetaskServlet</servlet-name>
+		<url-pattern>/updatetask</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>InsertData</servlet-name>
+		<url-pattern>/Insert</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DisplayData</servlet-name>
+		<url-pattern>/Display</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateData</servlet-name>
+		<url-pattern>/Update</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>Dictionary</servlet-name>
+		<url-pattern>/getOutput</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>chat</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>chatLogin</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>chatLogout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+<servlet-mapping>
+		<servlet-name>DisplayMsg</servlet-name>
+		<url-pattern>/displaymsg</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>History</servlet-name>
+		<url-pattern>/history</url-pattern>
+	</servlet-mapping>
+</web-app>
+	
