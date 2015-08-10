@@ -31,7 +31,7 @@ $(document).ready(function(){
 						end=0;
 						msgarr=data1.split(",");
 						// alert(msgarr[1]);
-						alert(msgarr.length);
+						//alert(msgarr.length);
 						for(start = 0; start < msgarr.length; start = start+4)
 						{
 							end+=4;
