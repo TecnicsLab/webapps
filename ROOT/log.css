@@ -1,0 +1,88 @@
+body{
+	background-color: transparent;
+	opacity: 1;
+	background-color:#3D3D99;
+}
+h1{
+	background:#292966;
+	color:white;
+}
+h4{
+    color:white;
+    font-family:verdana;
+    font-size:18;
+}
+#loginbtn{
+	background: ;
+	color: black;
+	font-family: monospace;
+	font-size: 14;
+	height: 20px;
+	width: 70px;
+}
+#d_log1{
+	background:#292966;
+}
+.TextBox{
+    padding: 0;
+    height: 25px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 16px;
+}
+.Textbox{
+	box-shadow: 0px 10px 100px #fff;
+    width: 250px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.box1{
+	border: 0;
+	background: #C2D6FF;
+
+	width:0px;
+	border-radius: 10px;
+	box-shadow: 10px 20px 10px #006599;
+	cursor: pointer;
+	color: #fff;
+	margin: 10;
+	outline: 0;
+	vertical-align: -1px;
+	padding: 20px 50px;
+	word-spacing: -9px;
+	line-height: 15px;
+	text-align: center;
+	transition: all .1s linear;
+	transition-property: background;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+.f_log{
+	border: 100;
+	background: #C2D6FF;
+	width:10px;
+	border-radius: 100px;
+	box-shadow: 100px 10px 100px #ADC2FF;
+	cursor: pointer;
+	color: #fff;
+	margin: 50px;
+	outline: 0;
+	vertical-align: -1px;
+	padding: 50px 150px;
+	word-spacing: 1px;
+	line-height: 15px;
+	text-align: center;
+	transition: all .1s linear;
+	transition-property: background;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+.d_head{
+	background: #FFFFFF;
+	box-shadow: 100px 20px 100px #FFF;
+  transform: translateY(3px);	
+}

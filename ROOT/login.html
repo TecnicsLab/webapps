@@ -1,0 +1,131 @@
+<html>
+<head>
+<style type="text/css">
+	body{
+	background-color: transparent;
+	opacity: 1;
+	background-color:#3D3D99;
+}
+h1{
+	background:#292966;
+	color:white;
+}
+h4{
+    color:white;
+    font-family:verdana;
+    font-size:18;
+}
+#loginbtn{
+	background: ;
+	color: black;
+	font-family: monospace;
+	font-size: 14;
+	height: 20px;
+	width: 70px;
+}
+#d_log1{
+		background:#292966;
+}
+.TextBox{
+    padding: 0;
+    height: 25px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 16px;
+}
+.Textbox{
+	box-shadow: 0px 10px 100px #fff;
+    width: 250px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.box1{
+	border: 0;
+	background: #C2D6FF;
+
+	width:0px;
+	border-radius: 10px;
+	box-shadow: 10px 20px 10px #006599;
+	cursor: pointer;
+	color: #fff;
+	margin: 10;
+	outline: 0;
+	vertical-align: -1px;
+	padding: 20px 50px;
+	word-spacing: -9px;
+	line-height: 15px;
+	text-align: center;
+	transition: all .1s linear;
+	transition-property: background;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+.f_log{
+	border: 100;
+	background: #C2D6FF;
+	width:10px;
+	border-radius: 100px;
+	/*box-shadow: 100px 10px 100px #ADC2FF;*/
+	cursor: pointer;
+	color: #fff;
+	margin: 50px;
+	outline: 0;
+	vertical-align: -1px;
+	padding: 50px 150px;
+	word-spacing: 1px;
+	line-height: 15px;
+	text-align: center;
+	transition: all .1s linear;
+	transition-property: background;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+.d_head{
+	background: #FFFFFF;
+	box-shadow: 100px 20px 100px #FFF;
+  transform: translateY(3px);	
+}
+</style>
+<!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="Actions.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="log.css">
+ -->
+<title></title>
+</head><br><br>
+<body align='center'>
+<table border="0" align="center" ><tr><td width="1000"><label><center><div style="background:#292966" class="d_head"><h1 style="color:white">Chat Room</h1></div></center></label></td></tr></table>
+<br>
+<form id="f_log" name="f_log" action="" align='left' class="f_log">
+<table align="center" id="tbl_log" name='tbl_log'>
+<tr>
+	<td width="500" align="center">
+	<div id='d_log' name='d_log'>
+	<h1>Login</h1>
+	<div id='d_log1' name='d_log1'><br>
+		<h4>
+			&nbsp;&nbsp;&nbsp;<input type="text" maxlength="" id="UserId" name="UserId" required 
+			placeholder='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user id' class="Textbox">
+		</h4>
+		<h4>	
+			&nbsp;&nbsp;&nbsp;<input type="password" maxlength="15" id="Password" name="Password" required placeholder='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password' class="Textbox"><br>
+		</h4>
+			<label id="lbl_n" style="color:black;font-family:monospace;font-weight:bold;font-size:14" ></label><br>
+
+			<input type="checkbox" value="" id="check" name="check">&nbsp;&nbsp;&nbsp;<label style="color:white">Remember Me</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+			<input type="button" value="Log in" align="center" style="color:gray;font-family:monospace;font-weight:bold;font-size:14" name="loginbtn" id="loginbtn" class="box1">
+		<br>
+ 	<br><br>
+	</div>
+	</td>
+</tr>
+</table>
+</form>
+</body>
+
+<footer align='right' style='color:black'>Designed and maintened by @Tecnics lab.</footer>
+</html>
