@@ -1,5 +1,5 @@
-#msg:focus{
-	border-radius: 20px;
+#msg{
+	border-radius: 10px;
 	color:#000;
 	outline:none;
 	border:#35a5e5 1px solid;
@@ -10,10 +10,11 @@
 
 }
 #all_msg{
+	color: #0000FF;
 	border-radius: 20px;
 	height: 225px;
 	width: 400px;
-	/*overflow: scroll;	*/
+	overflow: auto;
 	box-shadow: 100px 10px 150px #006599;
 	background-color: #C2C2D6;
 }

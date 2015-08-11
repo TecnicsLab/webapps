@@ -1,7 +1,10 @@
 $(document).ready(function(){
+	height=0;
+
 	 $.ajax({url:"/history",
 						success: function(data){
 							// alert(data);
+						$('#msg').val("");
 						var data1 = data;
 						data1 = data1.replace(/\[/gi,"");
 						data1 = data1.replace(/\]/gi,"");
@@ -15,12 +18,16 @@ $(document).ready(function(){
 							sentmsg = msg[1];
 							time = msg[2];
 							date = msg[3];
-							$("#all_msg").append(uname+": "+sentmsg+" "+time+","+date+"\n");
+							$("#all_msg").append(uname+":  "+sentmsg+" "+time+","+date+"\n");
 						}
 					}
+					
 				});
+
+	$("#all_msg").animate({scrollTop:1000000000});
 	$("#btn_send").click(function(){
 		var sentmsg = $("#msg").val(); 
+		$('#msg').val("");
 		$.ajax({url:"/displaymsg?msg="+sentmsg,
 					success: function(data)
 					{
@@ -43,7 +50,10 @@ $(document).ready(function(){
 							// alert(sentmsg);
 							$("#all_msg").append(uname+": "+sentmsg+" "+time+","+date+"\n");
 						}
+						window.location.reload();
+						$("#all_msg").animate({scrollTop:1000000000});
 					}
+
 		});
 	});
 	$("#btn_out").click(function(){

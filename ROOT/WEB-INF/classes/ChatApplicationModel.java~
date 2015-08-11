@@ -86,28 +86,24 @@ public class ChatApplicationModel
 		//statement.executeUpdate(query);
 		//statement.executeUpdate(query);
 		statement.executeUpdate(query,Statement.RETURN_GENERATED_KEYS);
-		 ResultSet res=statement.getGeneratedKeys();
-		 if(res.next())
-   		 {
-			sno=res.getLong(1);
-  //         	// user_id=res.getString(1);
-  //          	user_msg=res.getString(2);
-  //          	time=res.getString(3);
-  //          	date=res.getString(4);
-       	 }
-		String query1="select UserName,TextMsg,TextTime,TextDate from viewtextme where UserId='"+id+"' and slnum="+sno;
-		preparestmnt=connect.prepareStatement(query1);
-		result=preparestmnt.executeQuery();
-		//result=statement.getGeneratedKeys();
-		
+		ResultSet res=statement.getGeneratedKeys();
+		if(res.next())
+        	{
+		sno=res.getLong(1);
+          	user_id=res.getString(2);
+           	user_msg=res.getString(5);
+           	time=res.getString(4);
+           	date=res.getString(3);
+       		}
+		String query1="select UserName from tbltextmeuser where UserId='"+id+"'";
+		//preparestmnt=connect.prepareStatement(query1);
+		result=statement.executeQuery(query1);
 		while(result.next())
 		{
-			//result.getLong(1);
-			get_name=result.getString(1);
-			user_msg=result.getString(2);
-
-			time=result.getString(3);
-			date=result.getString(4);
+			get_name=result.getString(3);
+			//get_msg=result.getString(2);
+			//get_time=result.getString(3);
+			//get_date=result.getString(4);
 			//list.add(get_name+","+get_msg+","+get_time+","+get_date);
 		}
 		list.add(get_name+","+user_msg+","+time+","+date);

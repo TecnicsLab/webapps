@@ -1,4 +1,4 @@
-	$(document).ready(function(){
+$(document).ready(function(){
 		$("#UserId").blur(function(){
 			userid = $("#UserId").val(); 
 			
@@ -60,26 +60,26 @@ $("#registerbtn").click(function(){
 	    if (localStorage.chkbx != '')
 	    {
 	        $('#check').attr('checked');
-	        $('#usrid').val(localStorage.usrname);
-	        $('#Passsword').val(localStorage.pass);
+	        $('#UserId').val(localStorage.UserId);
+	        $('#Password').val(localStorage.pass);
 	    }
 	    else
 	    {
 	        $('#check').removeAttr('checked');
-	        $('#usrid').val('');
-	        $('#Passsword').val('');
+	        $('#UserId').val('');
+	        $('#Password').val('');
 	    } 
 	    $('#check').click(function()
 	    {
 	        if ($('#check').is(':checked'))
 	        {
-	            localStorage.usrname = $('#UserName').val();
+	            localStorage.UserId = $('#UserId').val();
 	            localStorage.pass = $('#Password').val();
 	            localStorage.chkbx = $('#check').val();
 	        }
 	        else
 	        {
-	            localStorage.usrname = '';
+	            localStorage.UserId = '';
 	            localStorage.pass = '';
 	            localStorage.chkbx = '';
 	        }      
@@ -89,4 +89,3 @@ $("#registerbtn").click(function(){
 		
 	
 });
-
