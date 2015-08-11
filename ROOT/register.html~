@@ -27,7 +27,7 @@
 	<h4>&nbsp;&nbsp;&nbsp;<input type="password" maxlength="15" id="Password" name="Password" required placeholder='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;enter password' class="Textbox"></h4>
 	<h5 style="color:white;font-family:monospace;font-size:5;font:icon;">include A-Z, a-z, 0-9, ( [ ] , . ! @ # $ % ^ * )</h5>
 	<button type="button" value="Sign Up" align="left" name="registerbtn" id="registerbtn" class="box2" style="font-size:15;color:gray;">Sign Up</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a id="lref" name="lref" href="login.html" style="color:gray;font-weight:bold;font-size:15" class="box1">login</a><br><br><br>
+	<a id="lref" name="lref" href="login.html" style="color:gray;font-weight:bold;font-size:15" ><button style='color:gray'>login</button></a><br><br><br>
 	<!-- <label id="lbl" name='lbl' class="lbl">register successfully</label> -->
 </form>
 <br>
