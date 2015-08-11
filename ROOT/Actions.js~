@@ -49,31 +49,30 @@ $(document).ready(function(){
 	    if (localStorage.chkbx != '')
 	    {
 	        $('#check').attr('checked');
-	        $('#UserId').val(localStorage.UserId);
-	        $('#Password').val(localStorage.pass);
+	        $('#usrid').val(localStorage.usrname);
+	        $('#Passsword').val(localStorage.pass);
 	    }
 	    else
 	    {
 	        $('#check').removeAttr('checked');
-	        $('#UserId').val('');
-	        $('#Password').val('');
+	        $('#usrid').val('');
+	        $('#Passsword').val('');
 	    } 
 	    $('#check').click(function()
 	    {
 	        if ($('#check').is(':checked'))
 	        {
-	            localStorage.UserId = $('#UserId').val();
+	            localStorage.usrname = $('#UserName').val();
 	            localStorage.pass = $('#Password').val();
 	            localStorage.chkbx = $('#check').val();
 	        }
 	        else
 	        {
-	            localStorage.UserId = '';
+	            localStorage.usrname = '';
 	            localStorage.pass = '';
 	            localStorage.chkbx = '';
 	        }      
 	    });
 	});	
 });
-
 
