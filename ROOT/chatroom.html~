@@ -1,13 +1,11 @@
 <html>
 <head>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="chatroomaction.js"></script>
 <link rel="stylesheet" type="text/css" href="chatroom.css">
 	<title></title>
 </head><br><br>
-<body onload="if(document.referrer=='') self.location='login.html';" align='center' bgcolor="#3D3D99" width='2000px' height='2000px' >
-
+<body align='center' bgcolor="#3D3D99" width='2000px' height='2000px' >
 <table border="0" align="center" ><tr><td width="1000"><label align='center' height='120'><div style="background:#292966" class="d_heading"><h1 style="color:white" class="h_tag">Chat Room</h1></div></label></td></tr></table>
 <br><br><br>
 <form id="f_caht" name="f_chat" action="" align='center' class="form">
